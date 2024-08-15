@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Porfolio en proceso</title>
+    
+<link rel="modulepreload" href="/porfolio-b618404559105e26.js" crossorigin=anonymous integrity="sha384-SfwvetLy+z3FFD+Nayjwtjg7ASRuzdrAnLvFoE2dGS7DJwjRnHIj6Pq6tyqhRF01">
+<link rel="preload" href="/porfolio-b618404559105e26_bg.wasm" crossorigin=anonymous integrity="sha384-Div3tSlHMwoK+90hW/YMJoEboxjMBhd8tO/GpFpn/sSP8x+xyvJyeuyhWUOsU0LA" as="fetch" type="application/wasm"></head>
+    <body>
+<script type="module" nonce="ufxqSTx4ORwxT3Oqx4ogPw==">
+import init, * as bindings from '/porfolio-b618404559105e26.js';
+const wasm = await init('/porfolio-b618404559105e26_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
