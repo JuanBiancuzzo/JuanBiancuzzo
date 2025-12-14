@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{fontawesome} % Required for FontAwesome icons
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Juan Ignacio Biancuzzo} \\ \vspace{1pt} 
+    { \Large Electrical Engineer $\sim$ Estudiante de ingeniería } \\
+
+    { \small
+        \faGlobe \href{https://juanbiancuzzo.github.io/JuanBiancuzzo/}{ portafolio} $|$
+        \faEnvelope \href{mailto:biancuzzojuanignacio@gmail.com}{ biancuzzojuanignacio@gmail} $|$
+        \faGithub \href{https://github.com/JuanBiancuzzo}{ github.com/JuanBiancuzzo} $|$
+        \faLinkedinSquare \href{https://www.linkedin.com/in/juan-ignacio-biancuzzo-367611231/}{/juan-ignacio-biancuzzo}
+    }
+    
+\end{center}
+
+\section{Resumen profesional}
+    \resumeSubHeadingListStart
+        \vspace{-2pt}\item Soy un estudiante de Ingeniería electrónica, e Ingeniería en Informática, altamente motivado y comprometido con el aprendizaje continuo. Poseo una sólida experiencia en la realización de proyectos y me destaco en habilidades clave como la comunicación efectiva, la resolución de problemas y la empatía, lo que me permite asumir nuevos desafíos con gran disposición y eficacia
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Habilidades técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Herramientas}{: Git, Docker, LTSpice, KiCad, Pandas, Numpy y Matplotlib} \\
+     \textbf{Lenguajes de programación}{: C, C++, C\#, Rust, Java, Python y SQL} \\
+     \textbf{Lenguajes}{: \textbf{Ingles} - C1, \textbf{ Español} - Nativo} \\
+    }}
+ \end{itemize}
+
+ %-----------EDUCATION-----------
+\section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad de Buenos Aires (UBA)}{}
+      {Estudios universitarios en las carreras de ingeniería en informática y electrónica}{Marzo 2019 -- Actualidad}
+    \resumeSubheading
+      {Colegio de LaSalle}{}
+      {Estudios primarios y secundarios}{Julio. 2002 -- Noviembre 2018}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Proyectos}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading {\textbf{Auto a control remoto} $|$ \emph{Arduino}}{\href{https://github.com/JuanBiancuzzo/Auto-control-infrarrojo}{github.com/Auto-control-infrarrojo}}
+            \resumeItemListStart
+                \resumeItem{\textbf{Dominio básico de Arduino}: Adquirido a través del diseño y la implementación de un sistema de control infrarrojo para un automóvil robótico}
+                \resumeItem{\textbf{Resolución de problemas en hardware y software}: Desarrollada al enfrentar y superar retos técnicos durante la construcción del vehículo}
+                \resumeItem{\textbf{Gestión de proyectos colaborativos}: Fortalecida mediante la organización y asignación de tareas dentro del equipo para cumplir objetivos específicos del proyecto}
+                \resumeItem{\textbf{Aprendizaje autodidacta en electrónica y programación}: Potenciado al explorar y profundizar en conceptos avanzados de Arduino no tratados previamente}
+            \resumeItemListEnd
+
+      \resumeProjectHeading {\textbf{Computadora de 8-bits} $|$ \emph{LTSpice, Assembly y Python}}{\href{https://github.com/JuanBiancuzzo/8-bit-computer}{github.com/8-bit-computer}}
+            \resumeItemListStart
+                \resumeItem{\textbf{Colaboración en Equipo Técnico}: Refinada al trabajar en un grupo multidisciplinario integrando electrónica e informática}
+                \resumeItem{\textbf{Dominio de Arquitectura de Computadoras}: Desarrollado al diseñar e implementar un set de instrucciones reducido (RISC) desde cero}
+                \resumeItem{\textbf{Implementación de Hardware Digital}: Lograda al ensamblar y optimizar componentes electrónicos fundamentales como la ALU, registros y memoria}
+                \resumeItem{\textbf{Solución de Problemas Complejos}: Desarrollada al identificar y corregir fallos de hardware y software en un sistema integrado}
+                \resumeItem{\textbf{Sinergia entre Informática y Electrónica}: Fortalecida al integrar circuitos físicos con lógica computacional en assembly, permitiendo abordar problemas desde ambas perspectivas para desarrollar soluciones más óptimas y escalables para el proyecto}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceheading
+      {Ayudante de la materia de Algoritmos y Programación I}{Marzo 2022 -- Diciembre 2023}
+      \resumeItemListStart
+        \resumeItem{\textbf{Asistencia y tutoría}: Guié a estudiantes en la comprensión y aplicación de conceptos clave de algoritmos y programación, ayudándolos a mejorar sus habilidades técnicas y a progresar en su formación profesional}
+        \resumeItem{\textbf{Soporte académico}: Brindé apoyo individualizado a estudiantes, respondiendo a preguntas y aclarando dudas para facilitar su aprendizaje y mejorar su desempeño en la materia}
+      \resumeItemListEnd
+
+    \resumeExperienceheading
+      {Ayudante de la materia de Taller de Programación I}{Agosto 2023 -- Actualidad}
+      \resumeItemListStart
+        \resumeItem{\textbf{Desarrollo de trabajos prácticos}: Participé en la creación y diseño de trabajos prácticos, asegurando que estos reflejen y promuevan las cualidades esenciales de colaboración en equipo entre los estudiantes}
+        \resumeItem{\textbf{Soporte en la enseñanza}: Asistí en la implementación de las prácticas, proporcionando orientación y apoyo a los estudiantes para garantizar la comprensión de los conceptos y el éxito en las tareas asignadas}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

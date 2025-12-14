@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{fontawesome} % Required for FontAwesome icons
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Juan Ignacio Biancuzzo} \\ \vspace{1pt} 
+    { \Large Software Engineer $\sim$ Estudiante de ingeniería } \\
+
+    { \small
+        \faGlobe \href{https://juanbiancuzzo.github.io/JuanBiancuzzo/}{ portafolio} $|$
+        \faEnvelope \href{mailto:biancuzzojuanignacio@gmail.com}{ biancuzzojuanignacio@gmail} $|$
+        \faGithub \href{https://github.com/JuanBiancuzzo}{ github.com/JuanBiancuzzo} $|$
+        \faLinkedinSquare \href{https://www.linkedin.com/in/juan-ignacio-biancuzzo-367611231/}{/juan-ignacio-biancuzzo}
+    }
+    
+\end{center}
+
+\section{Resumen profesional}
+    \resumeSubHeadingListStart
+        \vspace{-2pt}\item Soy un estudiante de Ingeniería en Informática, altamente motivado y comprometido con el aprendizaje continuo. Poseo una sólida experiencia en la realización de proyectos y me destaco en habilidades clave como la comunicación efectiva, la resolución de problemas y la empatía, lo que me permite asumir nuevos desafíos con gran disposición y eficacia
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Habilidades técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Lenguajes de programación}{: C, C++, C\#, Rust, Java, Python y SQL} \\
+     \textbf{Herramientas}{: Git, Docker, Unity, Pandas, Numpy y Matplotlib} \\
+     \textbf{Lenguajes}{: \textbf{Ingles} - C1, \textbf{ Español} - Nativo} \\
+    }}
+ \end{itemize}
+
+ %-----------EDUCATION-----------
+\section{Educación}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad de Buenos Aires (UBA)}{}
+      {Estudios universitarios en las carreras de ingeniería en informática y electrónica}{Marzo 2019 -- Actualidad}
+    \resumeSubheading
+      {Colegio de LaSalle}{}
+      {Estudios primarios y secundarios}{Julio. 2002 -- Noviembre 2018}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Proyectos}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading {\textbf{Solo} $|$ \emph{Python y Godot}}{\href{https://github.com/ptourne/uncert-titan}{github.com/uncert-solo}}
+            \resumeItemListStart
+                \resumeItem{\textbf{Participación destacada en la Hackathon Internacional Space Apps Challenge de la NASA}: Competí en un evento global de dos días enfocado en soluciones para la exploración espacial}
+                \resumeItem{\textbf{Desarrollo y lanzamiento de \href{https://sologame.ar}{sologame.ar}}: Contribuí a la conceptualización y creación de un juego interactivo diseñado para educar sobre desafíos y soluciones en la exploración espacial}
+                \resumeItem{\textbf{Desempeño como Developer}: Colaboré estrechamente con un compañero para implementar las funcionalidades del juego, optimizando la experiencia del usuario y el rendimiento técnico}
+                \resumeItem{\textbf{Liderazgo en la organización del equipo}: Coordiné las actividades del grupo, asigné tareas y gestioné el tiempo de manera eficiente para cumplir con los plazos estrictos del hackathon}
+                \resumeItem{\textbf{Gestión efectiva del tiempo y recursos}: Supervisioné el progreso del proyecto, asegurando la entrega exitosa y a tiempo del juego, a pesar de las limitaciones del evento}
+            \resumeItemListEnd
+
+      \resumeProjectHeading {\textbf{Marching cubes - Unity package} $|$ \emph{C\# y HLSL}}{\href{https://github.com/It-is-not-only-me/com.itisnotonlyme.marching-cubes}{github.com/marching-cubes}}
+            \resumeItemListStart
+                \resumeItem{\textbf{Visualización 3D eficiente y detallada}: Conseguí una visualización eficiente y detallada al implementar el algoritmo de Marching Cubes utilizando Compute Shaders en Unity, lo que resultó en un rendimiento gráfico optimizado y una representación precisa de datos volumétricos}
+                \resumeItem{\textbf{Desafíos técnicos complejos}: Superé desafíos complejos y amplié mis habilidades al enfrentar y resolver problemas avanzados fuera de mi zona de confort, lo que resultó en un producto final robusto y de alta calidad}
+                \resumeItem{\textbf{Rendimiento gráfico y la calidad visual}: Mejoré significativamente el rendimiento gráfico al desarrollar y optimizar Fragment y Vertex Shaders, lo que resultó en una experiencia visual más fluida y atractiva en la aplicación}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceheading
+      {Ayudante de la materia de Algoritmos y Programación I}{Marzo 2022 -- Diciembre 2023}
+      \resumeItemListStart
+        \resumeItem{\textbf{Asistencia y tutoría}: Guié a estudiantes en la comprensión y aplicación de conceptos clave de algoritmos y programación, ayudándolos a mejorar sus habilidades técnicas y a progresar en su formación profesional}
+        \resumeItem{\textbf{Soporte académico}: Brindé apoyo individualizado a estudiantes, respondiendo a preguntas y aclarando dudas para facilitar su aprendizaje y mejorar su desempeño en la materia}
+      \resumeItemListEnd
+
+    \resumeExperienceheading
+      {Ayudante de la materia de Taller de Programación I}{Agosto 2023 -- Actualidad}
+      \resumeItemListStart
+        \resumeItem{\textbf{Desarrollo de trabajos prácticos}: Participé en la creación y diseño de trabajos prácticos, asegurando que estos reflejen y promuevan las cualidades esenciales de colaboración en equipo entre los estudiantes}
+        \resumeItem{\textbf{Soporte en la enseñanza}: Asistí en la implementación de las prácticas, proporcionando orientación y apoyo a los estudiantes para garantizar la comprensión de los conceptos y el éxito en las tareas asignadas}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
