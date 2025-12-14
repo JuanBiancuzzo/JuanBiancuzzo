@@ -1,4 +1,4 @@
-name: Subir informes
+name: Subir cvs
 
 on:
     workflow_dispatch:
@@ -15,7 +15,8 @@ jobs:
         steps:
             - name: Conseguir repo
               uses: actions/checkout@v4
-              # Agregar rama para que sea esta
+              with:
+                    ref: 'cv'
 
             - name: Crear el pdf
               uses: addnab/docker-run-action@v3
@@ -44,7 +45,7 @@ jobs:
           - name: Subir csv como release asset
             uses: softprops/action-gh-release@v2
             with:
-              tag_name: cvs_${{ github.run_number }}
+              tag_name: cvs_0.${{ github.run_number }}
               name: "Release cvs"
               files: |
                 **/*.pdf
