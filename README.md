@@ -1,16 +1,18 @@
-## Hi there 👋
+# Curriculum vitae
+En esta rama voy a desarrollar mis CV, tanto por carrera como también general. Con la siguiente estructura
 
-<!--
-**JuanBiancuzzo/JuanBiancuzzo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```
+JuanBiancuzzo/
+├── README.md
+├── electronica/
+│   ├── imagenes/
+│   └── main.tex  
+├── informatica/
+│   ├── imagenes/
+│   └── main.tex  
+└── general/
+    ├── imagenes/
+    └── main.tex  
+```
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+El resultado se puede encontrar en las releseas, y acá solo se muestra como se van a crear estos.
