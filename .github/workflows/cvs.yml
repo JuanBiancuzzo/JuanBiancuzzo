@@ -1,0 +1,50 @@
+name: Subir informes
+
+on:
+    workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+    compilar-cvs:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                ubicacion: [ electronica, informatica ]
+        steps:
+            - name: Conseguir repo
+              uses: actions/checkout@v4
+              # Agregar rama para que sea esta
+
+            - name: Crear el pdf
+              uses: addnab/docker-run-action@v3
+              timeout-minutes: 5
+              with:
+                    image: juanbiancuzzo/latex:latest
+                    options: -v ${{ github.workspace }}/${{ matrix.ubicacion }}:/latex
+                    run: sh -c "/scripts/compile.sh && cp /latex/main.pdf /latex/cv_${{ matrix.ubicacion }}.pdf"
+
+            - name: Subir pdf a github artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                    name: cv_${{ matrix.ubicacion }}
+                    path: ${{ github.workspace }}/${{ matrix.ubicacion }}/cv_${{ matrix.ubicacion }}.pdf
+                    if-no-files-found: warn
+    release:
+        needs: compilar-cvs
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Descargar todos los artifacts
+            uses: actions/download-artifact@v4
+            with:
+              path: .
+
+          - name: Subir csv como release asset
+            uses: softprops/action-gh-release@v2
+            with:
+              tag_name: cvs_${{ github.run_number }}
+              name: "Release cvs"
+              files: |
+                **/*.pdf
